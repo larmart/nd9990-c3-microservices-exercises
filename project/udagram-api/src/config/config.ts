@@ -1,13 +1,13 @@
 export const config = {
   'username': process.env.POSTGRES_USERNAME,
-  'password': process.env.POSTGRES_PASSWORD,
-  'database': process.env.POSTGRES_DB,
+  'password': process.env.POSTGRES_PASSWORT,
+  'database': process.env.POSTGRES_DATABASE,
   'host': process.env.POSTGRES_HOST,
   'dialect': 'postgres',
   'aws_region': process.env.AWS_REGION,
   'aws_profile': process.env.AWS_PROFILE,
-  'aws_media_bucket': process.env.AWS_BUCKET,
-  'url': process.env.URL,
+  'aws_media_bucket': process.env.AWS_MEDIA_BUCKET,
+  'url': "http://localhost:8100", //process.env.URL,
   'jwt': {
     'secret': process.env.JWT_SECRET,
   },
